@@ -1,0 +1,343 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BFBB2BD01B8DBCB2009BDB72 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBB2BCF1B8DBCB2009BDB72 /* main.m */; };
+		BFBB2BD31B8DBCB2009BDB72 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBB2BD21B8DBCB2009BDB72 /* AppDelegate.m */; };
+		BFBB2BD61B8DBCB2009BDB72 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBB2BD51B8DBCB2009BDB72 /* ViewController.m */; };
+		BFBB2BD91B8DBCB2009BDB72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFBB2BD71B8DBCB2009BDB72 /* Main.storyboard */; };
+		BFBB2BDC1B8DBCB2009BDB72 /* MyDrawLineDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BFBB2BDA1B8DBCB2009BDB72 /* MyDrawLineDemo.xcdatamodeld */; };
+		BFBB2BDE1B8DBCB2009BDB72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFBB2BDD1B8DBCB2009BDB72 /* Assets.xcassets */; };
+		BFBB2BEF1B8DBCF3009BDB72 /* JMGestureDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBB2BEE1B8DBCF3009BDB72 /* JMGestureDrawView.m */; };
+		BFF7CFB01B8DF74900DC3286 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFF7CFAF1B8DF74900DC3286 /* LaunchScreen.xib */; };
+		BFF7CFB31B8DFBB800DC3286 /* JMPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF7CFB21B8DFBB800DC3286 /* JMPoint.m */; };
+		BFF7CFB61B8E09AC00DC3286 /* JMMathUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF7CFB51B8E09AC00DC3286 /* JMMathUtil.m */; };
+		BFF7CFB91B8F0E7600DC3286 /* SimplifyUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF7CFB81B8F0E7600DC3286 /* SimplifyUtils.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BFBB2BCB1B8DBCB2009BDB72 /* MyDrawLineDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDrawLineDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFBB2BCF1B8DBCB2009BDB72 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BFBB2BD11B8DBCB2009BDB72 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BFBB2BD21B8DBCB2009BDB72 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BFBB2BD41B8DBCB2009BDB72 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BFBB2BD51B8DBCB2009BDB72 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BFBB2BD81B8DBCB2009BDB72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BFBB2BDB1B8DBCB2009BDB72 /* MyDrawLineDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyDrawLineDemo.xcdatamodel; sourceTree = "<group>"; };
+		BFBB2BDD1B8DBCB2009BDB72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BFBB2BE21B8DBCB2009BDB72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFBB2BED1B8DBCF3009BDB72 /* JMGestureDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMGestureDrawView.h; sourceTree = "<group>"; };
+		BFBB2BEE1B8DBCF3009BDB72 /* JMGestureDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMGestureDrawView.m; sourceTree = "<group>"; };
+		BFF7CFAF1B8DF74900DC3286 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		BFF7CFB11B8DFBB800DC3286 /* JMPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMPoint.h; sourceTree = "<group>"; };
+		BFF7CFB21B8DFBB800DC3286 /* JMPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMPoint.m; sourceTree = "<group>"; };
+		BFF7CFB41B8E09AC00DC3286 /* JMMathUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMMathUtil.h; sourceTree = "<group>"; };
+		BFF7CFB51B8E09AC00DC3286 /* JMMathUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMMathUtil.m; sourceTree = "<group>"; };
+		BFF7CFB71B8F0E7600DC3286 /* SimplifyUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplifyUtils.h; sourceTree = "<group>"; };
+		BFF7CFB81B8F0E7600DC3286 /* SimplifyUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplifyUtils.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFBB2BC81B8DBCB2009BDB72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BFBB2BC21B8DBCB2009BDB72 = {
+			isa = PBXGroup;
+			children = (
+				BFBB2BCD1B8DBCB2009BDB72 /* MyDrawLineDemo */,
+				BFBB2BCC1B8DBCB2009BDB72 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BFBB2BCC1B8DBCB2009BDB72 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFBB2BCB1B8DBCB2009BDB72 /* MyDrawLineDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFBB2BCD1B8DBCB2009BDB72 /* MyDrawLineDemo */ = {
+			isa = PBXGroup;
+			children = (
+				BFBB2BD11B8DBCB2009BDB72 /* AppDelegate.h */,
+				BFBB2BD21B8DBCB2009BDB72 /* AppDelegate.m */,
+				BFBB2BD41B8DBCB2009BDB72 /* ViewController.h */,
+				BFBB2BD51B8DBCB2009BDB72 /* ViewController.m */,
+				BFBB2BD71B8DBCB2009BDB72 /* Main.storyboard */,
+				BFBB2BDD1B8DBCB2009BDB72 /* Assets.xcassets */,
+				BFBB2BE21B8DBCB2009BDB72 /* Info.plist */,
+				BFBB2BDA1B8DBCB2009BDB72 /* MyDrawLineDemo.xcdatamodeld */,
+				BFBB2BCE1B8DBCB2009BDB72 /* Supporting Files */,
+				BFBB2BED1B8DBCF3009BDB72 /* JMGestureDrawView.h */,
+				BFBB2BEE1B8DBCF3009BDB72 /* JMGestureDrawView.m */,
+				BFF7CFAF1B8DF74900DC3286 /* LaunchScreen.xib */,
+				BFF7CFB11B8DFBB800DC3286 /* JMPoint.h */,
+				BFF7CFB21B8DFBB800DC3286 /* JMPoint.m */,
+				BFF7CFB41B8E09AC00DC3286 /* JMMathUtil.h */,
+				BFF7CFB51B8E09AC00DC3286 /* JMMathUtil.m */,
+				BFF7CFB71B8F0E7600DC3286 /* SimplifyUtils.h */,
+				BFF7CFB81B8F0E7600DC3286 /* SimplifyUtils.m */,
+			);
+			path = MyDrawLineDemo;
+			sourceTree = "<group>";
+		};
+		BFBB2BCE1B8DBCB2009BDB72 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BFBB2BCF1B8DBCB2009BDB72 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BFBB2BCA1B8DBCB2009BDB72 /* MyDrawLineDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFBB2BE51B8DBCB2009BDB72 /* Build configuration list for PBXNativeTarget "MyDrawLineDemo" */;
+			buildPhases = (
+				BFBB2BC71B8DBCB2009BDB72 /* Sources */,
+				BFBB2BC81B8DBCB2009BDB72 /* Frameworks */,
+				BFBB2BC91B8DBCB2009BDB72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyDrawLineDemo;
+			productName = MyDrawLineDemo;
+			productReference = BFBB2BCB1B8DBCB2009BDB72 /* MyDrawLineDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFBB2BC31B8DBCB2009BDB72 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = fimi;
+				TargetAttributes = {
+					BFBB2BCA1B8DBCB2009BDB72 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = BFBB2BC61B8DBCB2009BDB72 /* Build configuration list for PBXProject "MyDrawLineDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BFBB2BC21B8DBCB2009BDB72;
+			productRefGroup = BFBB2BCC1B8DBCB2009BDB72 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFBB2BCA1B8DBCB2009BDB72 /* MyDrawLineDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BFBB2BC91B8DBCB2009BDB72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFBB2BDE1B8DBCB2009BDB72 /* Assets.xcassets in Resources */,
+				BFBB2BD91B8DBCB2009BDB72 /* Main.storyboard in Resources */,
+				BFF7CFB01B8DF74900DC3286 /* LaunchScreen.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFBB2BC71B8DBCB2009BDB72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFF7CFB91B8F0E7600DC3286 /* SimplifyUtils.m in Sources */,
+				BFBB2BDC1B8DBCB2009BDB72 /* MyDrawLineDemo.xcdatamodeld in Sources */,
+				BFBB2BD61B8DBCB2009BDB72 /* ViewController.m in Sources */,
+				BFBB2BEF1B8DBCF3009BDB72 /* JMGestureDrawView.m in Sources */,
+				BFF7CFB61B8E09AC00DC3286 /* JMMathUtil.m in Sources */,
+				BFBB2BD31B8DBCB2009BDB72 /* AppDelegate.m in Sources */,
+				BFBB2BD01B8DBCB2009BDB72 /* main.m in Sources */,
+				BFF7CFB31B8DFBB800DC3286 /* JMPoint.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BFBB2BD71B8DBCB2009BDB72 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFBB2BD81B8DBCB2009BDB72 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BFBB2BE31B8DBCB2009BDB72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BFBB2BE41B8DBCB2009BDB72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BFBB2BE61B8DBCB2009BDB72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MyDrawLineDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cc.handos.MyDrawLineDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BFBB2BE71B8DBCB2009BDB72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MyDrawLineDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cc.handos.MyDrawLineDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BFBB2BC61B8DBCB2009BDB72 /* Build configuration list for PBXProject "MyDrawLineDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFBB2BE31B8DBCB2009BDB72 /* Debug */,
+				BFBB2BE41B8DBCB2009BDB72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFBB2BE51B8DBCB2009BDB72 /* Build configuration list for PBXNativeTarget "MyDrawLineDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFBB2BE61B8DBCB2009BDB72 /* Debug */,
+				BFBB2BE71B8DBCB2009BDB72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BFBB2BDA1B8DBCB2009BDB72 /* MyDrawLineDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BFBB2BDB1B8DBCB2009BDB72 /* MyDrawLineDemo.xcdatamodel */,
+			);
+			currentVersion = BFBB2BDB1B8DBCB2009BDB72 /* MyDrawLineDemo.xcdatamodel */;
+			path = MyDrawLineDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BFBB2BC31B8DBCB2009BDB72 /* Project object */;
+}

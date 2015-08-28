@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nhc-eN-daP" customClass="JMGestureDrawView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFK-wD-hjo">
+                                        <rect key="frame" x="254" y="526" width="95" height="30"/>
+                                        <state key="normal" title="Get Key Point">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="getKeyPoints:" destination="BYZ-38-t0r" eventType="touchDown" id="EAG-py-L9s"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="3" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mKN-YI-j2j">
+                                        <rect key="frame" x="252" y="472" width="97" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="97" id="rBh-Wm-Bf4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="mKN-YI-j2j" firstAttribute="trailing" secondItem="wFK-wD-hjo" secondAttribute="trailing" id="CsB-4q-1kC"/>
+                                    <constraint firstItem="wFK-wD-hjo" firstAttribute="top" secondItem="mKN-YI-j2j" secondAttribute="bottom" constant="24" id="P3z-Ca-Heh"/>
+                                    <constraint firstAttribute="bottom" secondItem="wFK-wD-hjo" secondAttribute="bottom" constant="44" id="fNe-5f-ZBc"/>
+                                    <constraint firstItem="mKN-YI-j2j" firstAttribute="centerX" secondItem="Nhc-eN-daP" secondAttribute="centerX" id="m9k-EW-uBY"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Nhc-eN-daP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HAA-pg-r6d"/>
+                            <constraint firstItem="Nhc-eN-daP" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="YRT-nO-Zd1"/>
+                            <constraint firstItem="Nhc-eN-daP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ZWI-b7-leh"/>
+                            <constraint firstAttribute="trailing" secondItem="Nhc-eN-daP" secondAttribute="trailing" id="hkg-TE-2b9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bgView" destination="Nhc-eN-daP" id="CfG-07-nOV"/>
+                        <outlet property="textMaxCount" destination="mKN-YI-j2j" id="tsP-LX-Sad"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
