@@ -1,6 +1,5 @@
 # JMGestureDrawView
 
-这里是一个获取路径关键特征点的算法演示demo。
 
 
 假设我们绘制一条曲线，但是这条曲线可能就是一条折现，那么构成这条折现的组成关键点就只需要3个点就可以，这三个点就是“关键特征点”。
@@ -39,7 +38,7 @@
 
 使用方法如下：
 
-##SimplifyUtils
+##JMSimplifyUtils
 
 
 通过RDP算法，来获取关键特征点,pointArray:需要计算的曲线点组,tolerance:最小容忍度
