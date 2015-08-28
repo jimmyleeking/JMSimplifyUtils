@@ -42,6 +42,8 @@
 ##SimplifyUtils
 
 pointArray:需要计算的曲线点组,tolerance:最小容忍度
+
+
 `
 +(NSMutableArray *)simplify:(NSArray *)pointArray tolerance:(double)tolerance;`
 
