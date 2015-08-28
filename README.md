@@ -41,12 +41,10 @@
 
 ##SimplifyUtils
 
-<code>
-//pointArray:需要计算曲线的完整点
-//tolerance:点与点之间的距离容忍度
+pointArray:需要计算的曲线点组,tolerance:最小容忍度
+`
++(NSMutableArray *)simplify:(NSArray *)pointArray tolerance:(double)tolerance;`
 
-+(NSMutableArray *)simplify:(NSArray *)pointArray tolerance:(double)tolerance;
-</code>
 
 
 
