@@ -44,6 +44,8 @@
 
 通过RDP算法，来获取关键特征点,pointArray:需要计算的曲线点组,tolerance:最小容忍度
 (最小容忍度一般可以设置为手机的dpi值)
+
+
 `
 +(NSMutableArray *)simplifyByRDP:(NSArray *)pointArray tolerance:(double)tolerance;
 `
@@ -52,6 +54,8 @@
 
 pointArray：需要计算的曲线点组
 maxCount:需要获取最大关键特征点的个数
+
+
 `
 +(NSMutableArray *)simplifyByAngle:(NSArray *)pointArray maxCount:(NSInteger)maxCount;
 `
