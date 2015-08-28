@@ -9,7 +9,7 @@
 #import "JMGestureDrawView.h"
 #import "JMPoint.h"
 #import "JMMathUtil.h"
-#import "SimplifyUtils.h"
+#import "JMSimplifyUtils.h"
 #define DEFAULT_CIRCLE_RADIUS 10
 
 @interface JMGestureDrawView()
@@ -105,76 +105,6 @@
 
 
 
--(NSArray *)sortUnit:(JMPoint *)pointA b:(JMPoint *)pointB c:(JMPoint *)pointC d:(JMPoint *)pointD{
-    JMPoint *midPoint=nil;
-    CGFloat angleFirst=angleBetweenThreePoints(pointA.point, pointB.point, pointC.point);
-    CGFloat angleSecond=angleBetweenThreePoints(pointB.point, pointC.point, pointD.point);
-    if(angleFirst>angleSecond)
-    {
-        midPoint=pointB;
-    }else{
-        midPoint=pointC;
-        
-    }
-    if(isnan(angleFirst))
-    {
-        midPoint=pointC;
-    }
-    if(isnan(angleSecond))
-    {
-        midPoint=pointB;
-    }
-    NSArray *result=[NSArray arrayWithObjects:pointA,midPoint,pointD, nil];
-    return result;
-}
-
-
--(NSArray *)sort:(NSArray *)array startIndex:(NSInteger)start endIndex:(NSInteger)end{
-    
-    NSInteger length=end-start;
-    if(length<3)
-    {
-        if(length==0)
-        {
-            return [NSArray arrayWithObject:array[start]];
-        }else{
-            
-            NSMutableArray *result=[[NSMutableArray alloc]init];
-            for(NSInteger i=start;i<=end;i++)
-            {
-                [result addObject:array[i]];
-            }
-            return result;
-        }
-        
-    }
-    if(length==3)
-    {
-        NSArray *tempResult=[self sortUnit:array[start] b:array[start+1] c:array[start+2] d:array[start+3]];
-        return tempResult;
-    }else{
-        
-        NSInteger rightStart=(length-1)/2+start;
-        if(length<7)
-        {
-            
-            rightStart=start+3;
-        }
-        if(start<rightStart&&rightStart<end)
-        {
-            NSArray *leftTemp=[self sort:array startIndex:start endIndex:rightStart];
-            NSArray *rightTemp=[self sort:array startIndex:rightStart+1 endIndex:end];
-            NSMutableArray *tempAll=[[NSMutableArray alloc]init];
-            [tempAll addObjectsFromArray:leftTemp];
-            [tempAll addObjectsFromArray:rightTemp];
-            return tempAll;
-        }else{
-            return nil;
-        }
-        
-    }
-    
-}
 
 -(void)printArray:(NSString *)msg array:(NSArray *)array start:(NSInteger)start end:(NSInteger)end{
     
@@ -190,31 +120,7 @@
 
 -(void)drawKeyPoint:(NSInteger)maxCount{
     isDrawKeyPoint=YES;
-    NSArray *result=nil;
-    if(maxCount<=2)
-    {
-        if(maxCount<=0)
-        {
-            return;
-        }
-        if(maxCount==1)
-        {
-            result=[NSArray arrayWithObject:pointArray[0]];
-        }
-        if(maxCount==2)
-        {
-            result=[NSArray arrayWithObjects:pointArray[0],[pointArray objectAtIndex:[pointArray count]-1], nil];
-        }
-    }else{
-        result=pointArray;
-        NSInteger length=0;
-        do{
-            
-            result=[self sort:result startIndex:0 endIndex:([result count]-1)];
-            length=[result count];
-        }while(length>maxCount);
-        
-    }
+    NSMutableArray *result=[NSMutableArray arrayWithArray:[JMSimplifyUtils simplifyByAngle:[pointArray copy] maxCount:maxCount]];
     keyPointArray=[NSMutableArray arrayWithArray:result];
     [self setNeedsDisplay];
     

@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "JMPoint.h"
 #import "JMMathUtil.h"
-#import "SimplifyUtils.h"
+#import "JMSimplifyUtils.h"
 @interface ViewController ()
 
 @end

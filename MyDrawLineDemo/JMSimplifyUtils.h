@@ -8,11 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import "JMPoint.h"
-@interface SimplifyUtils : NSObject
+@interface JMSimplifyUtils : NSObject
 
 
 
-+(NSMutableArray *)simplify:(NSArray *)pointArray tolerance:(double)tolerance;
++(NSMutableArray *)simplifyByRDP:(NSArray *)pointArray tolerance:(double)tolerance;
+
++(NSMutableArray *)simplifyByAngle:(NSArray *)pointArray maxCount:(NSInteger)maxCount;
 //计算点到之间的距离
 
 +(double)pointToLineDistance:(JMPoint *)point lineFrom:(JMPoint *)from lineTo:(JMPoint *)to;

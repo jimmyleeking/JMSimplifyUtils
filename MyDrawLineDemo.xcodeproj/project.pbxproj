@@ -17,7 +17,7 @@
 		BFF7CFB01B8DF74900DC3286 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFF7CFAF1B8DF74900DC3286 /* LaunchScreen.xib */; };
 		BFF7CFB31B8DFBB800DC3286 /* JMPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF7CFB21B8DFBB800DC3286 /* JMPoint.m */; };
 		BFF7CFB61B8E09AC00DC3286 /* JMMathUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF7CFB51B8E09AC00DC3286 /* JMMathUtil.m */; };
-		BFF7CFB91B8F0E7600DC3286 /* SimplifyUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF7CFB81B8F0E7600DC3286 /* SimplifyUtils.m */; };
+		BFF7CFB91B8F0E7600DC3286 /* JMSimplifyUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF7CFB81B8F0E7600DC3286 /* JMSimplifyUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,8 +38,8 @@
 		BFF7CFB21B8DFBB800DC3286 /* JMPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMPoint.m; sourceTree = "<group>"; };
 		BFF7CFB41B8E09AC00DC3286 /* JMMathUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMMathUtil.h; sourceTree = "<group>"; };
 		BFF7CFB51B8E09AC00DC3286 /* JMMathUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMMathUtil.m; sourceTree = "<group>"; };
-		BFF7CFB71B8F0E7600DC3286 /* SimplifyUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplifyUtils.h; sourceTree = "<group>"; };
-		BFF7CFB81B8F0E7600DC3286 /* SimplifyUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplifyUtils.m; sourceTree = "<group>"; };
+		BFF7CFB71B8F0E7600DC3286 /* JMSimplifyUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMSimplifyUtils.h; sourceTree = "<group>"; };
+		BFF7CFB81B8F0E7600DC3286 /* JMSimplifyUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMSimplifyUtils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,8 +88,8 @@
 				BFF7CFB21B8DFBB800DC3286 /* JMPoint.m */,
 				BFF7CFB41B8E09AC00DC3286 /* JMMathUtil.h */,
 				BFF7CFB51B8E09AC00DC3286 /* JMMathUtil.m */,
-				BFF7CFB71B8F0E7600DC3286 /* SimplifyUtils.h */,
-				BFF7CFB81B8F0E7600DC3286 /* SimplifyUtils.m */,
+				BFF7CFB71B8F0E7600DC3286 /* JMSimplifyUtils.h */,
+				BFF7CFB81B8F0E7600DC3286 /* JMSimplifyUtils.m */,
 			);
 			path = MyDrawLineDemo;
 			sourceTree = "<group>";
@@ -172,7 +172,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFF7CFB91B8F0E7600DC3286 /* SimplifyUtils.m in Sources */,
+				BFF7CFB91B8F0E7600DC3286 /* JMSimplifyUtils.m in Sources */,
 				BFBB2BDC1B8DBCB2009BDB72 /* MyDrawLineDemo.xcdatamodeld in Sources */,
 				BFBB2BD61B8DBCB2009BDB72 /* ViewController.m in Sources */,
 				BFBB2BEF1B8DBCF3009BDB72 /* JMGestureDrawView.m in Sources */,
