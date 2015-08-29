@@ -58,5 +58,8 @@ maxCount:需要获取最大关键特征点的个数
 `
 
 
+##Licence
+
+###MIT license
 
 
